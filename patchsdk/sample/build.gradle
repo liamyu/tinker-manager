@@ -2,20 +2,21 @@ apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-        classpath('com.tencent.tinker:tinker-patch-gradle-plugin:1.9.1')
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath('com.tencent.tinker:tinker-patch-gradle-plugin:1.9.14.7')
     }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.tencent.tinker:tinker-android-anno:1.9.1'
-    compile 'com.tencent.tinker:tinker-android-lib:1.9.1'
-    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.tencent.tinker:tinker-android-anno:1.9.14.7'
+    compile 'com.tencent.tinker:tinker-android-lib:1.9.14.7'
+    compile 'com.android.support:multidex:1.0.3'
     compile project(':patchsdk')
 }
 

@@ -44,14 +44,14 @@ dependencies {
 }
 
 def mavenDesc = 'Tinker patch manager'
-def siteUrl = 'https://github.com/baidao/tinker-manager'
+def siteUrl = 'https://github.com/liamyu/tinker-manager'
 def gitUrl = "${siteUrl}.git"
 def issueUrl = "${siteUrl}/issues"
 
 def licenseIds = ['Apache-2.0']
 def licenseNames = ['The Apache Software License, Version 2.0']
 def licenseUrls = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
-def inception = '2016'
+def inception = '2020'
 
 Properties props = new Properties()
 try {
@@ -130,13 +130,13 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "com.dx168.patchsdk:patchsdk"
+        name = "io.github.liamyu.patchsdk"
         desc = mavenDesc
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         issueTrackerUrl = issueUrl
         licenses = licenseIds
-        labels = ['android', 'com.dx168.patchsdk', 'plugin', 'patch', 'com.dx168.patchsdk.tinker-manager']
+        labels = ['android', 'io.github.liamyu.patchsdk', 'plugin', 'patch', 'io.github.liamyu.patchsdk.tinker-manager']
         publish = true
         publicDownloadNumbers = true
     }

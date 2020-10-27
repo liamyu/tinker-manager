@@ -92,7 +92,7 @@ public final class PatchManager {
     private FullUpdateHandler fullUpdateHandler = new FullUpdateHandler();
 
     public void init(Context context, String baseUrl, String appId, String appSecret, IPatchManager actualManager) {
-        this.context = context.getApplicationContext();
+        this.context = context;
         this.actualManager = actualManager;
         if (!PatchUtils.isMainProcess(context)) {
             return;
