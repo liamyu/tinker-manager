@@ -8,9 +8,9 @@ buildscript {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
 
 configure(allprojects) { project ->
     apply plugin: 'java'

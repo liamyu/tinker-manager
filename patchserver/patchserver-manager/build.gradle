@@ -1,10 +1,12 @@
 apply plugin: 'war'
 
-war<<{
-    copy {
-        from war.archivePath
-        into "$buildDir/libs"
-        rename('patchserver-manager.war', 'hotfix-console.war')
+war {
+    doLast {
+        copy {
+            from war.archivePath
+            into "$buildDir/libs"
+            rename('patchserver-manager.war', 'hotfix-console.war')
+        }
     }
 }
 
