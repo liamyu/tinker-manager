@@ -22,6 +22,7 @@ v1.0.7 修复windows部署时路径的问题
 v1.0.8 修复若干bug，如果使用老版本最好更新
 v1.1.0 增加子账号管理功能，增加对App全量更新的支持
 v1.2.0 增加错误日志上报
+v1.2.1 允许x.xx.x格式的版本号
 ```
 
 patchsdk
@@ -35,6 +36,7 @@ v1.1.4 1) 修改上报时机从patch success改到load success
 	   2) targetSdkVersion>=23获取deviceId时READ_PHONE_STATE权限容错处理
 v1.2.0 增加App全量更新支持
 v1.2.6 增加错误日志上报
+v1.2.8 修复context获取导致的crash
 ```
 
 debugtool
