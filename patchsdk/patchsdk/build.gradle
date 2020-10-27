@@ -130,7 +130,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "io.github.liamyu.patchsdk"
+        name = "patchsdk"
         desc = mavenDesc
         websiteUrl = siteUrl
         vcsUrl = gitUrl
